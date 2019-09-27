@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int lenstr( char *s ) {
+int mystrlen( char *s ) {
 	int i = 0;
 	int len = 0;
 	int item;
@@ -16,15 +16,15 @@ int lenstr( char *s ) {
 	return len;
 }
 
-char * strcp( char *dest, char *source ){
+char * mystrcpy( char *dest, char *source ){
 	
 }
 
-char * strnct( char *dest, char *source, int n){
+char * mystrncat( char *dest, char *source, int n){
 }
 
-int strcmp( char *s1, char *s2 ){
+int mystrcmp( char *s1, char *s2 ){
 }
 
-char * strichr( char *s, char c ){
+char * mystrchr( char *s, char c ){
 }

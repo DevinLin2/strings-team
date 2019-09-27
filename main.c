@@ -18,6 +18,6 @@ int main() {
 	//test strlen
 	printf("\n\nTesting strlen:\n");
 	for(i = 0; i < 3; i++) {
-		printf("\nstrlen(str%d):\n[standard]: %d\n[mine]: %d\n", i, strlen(strings[i]), lenstr(strings[i]));
+		printf("\nstrlen(str%d):\n[standard]: %d\n[mine]: %d\n", i, strlen(strings[i]), mystrlen(strings[i]));
 	}
 }
