@@ -17,7 +17,17 @@ int mystrlen( char *s ) {
 }
 
 char * mystrcpy( char *dest, char *source ){
-	
+	int i = 0;
+	char item;
+	while (1) {
+		item = source[i];
+		dest[i] = item; 
+		if (item == NULL) {
+			break;
+		}
+		i++;
+	}
+	return dest;
 }
 
 char * mystrncat( char *dest, char *source, int n){
