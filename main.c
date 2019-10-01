@@ -1,30 +1,26 @@
 #include<stdlib.h>
 #include<stdio.h>
+#include<string.h>
 #include"headers.h"
 
 int main() {
 	//strings to be tested
 	char str0[10] = "StuyPulse";
 	char str1[20] = "Sharing is Caring";
-	char str2[15] = "Let it Rip";
-	char str3[5];
-	char *strings[3] = {str0, str1, str2};
-	
+	char mystr0[10] = "StuyPulse";
+	char mystr1[20] = "Sharing is Caring";
+
 	//print out strings
-	int i;
-	for(i = 0; i < 3; i++) {
-		printf("str%d: [%s]\n", i, strings[i]);
-	}
+	printf("str0: [%s]\nstr1: [%s]\n", str0, str1);
+	printf("mystr0: [%s]\nmystr1: [%s]\n", mystr0, mystr1);
+
 
 	//test strlen
-	printf("\n\nTesting strlen:\n");
-	for(i = 0; i < 3; i++) {
-		printf("\nstrlen(str%d):\n[standard]: %d\n[mine]: %d\n", i, strlen(strings[i]), mystrlen(strings[i]));
-	}
+	printf("\nTesting strlen(str0):\nstandard: %d\nmine: %d\n", strlen(str0), mystrlen(str0));
 
 	//test strcpy
-	printf("\n\nTesting strcpy:\n");
-	for(i = 0; i < 3; i++) {
-		printf("\nstrlen(str3, str%d):\n[standard]: [%s]\n[mine]: [%s]\n", i, strcpy(str3, strings[i]), mystrcpy(str3, strings[i]));
-	}
+	printf("\nstrcpy(str1, str0):\nstandard: [%s]\nmine: [%s]\n", strcpy(str1, str0), mystrcpy(mystr1, mystr0));
+
+	//test strncat
+	printf("\nstrncat(str1, str0, 4)\nstandard: [%s]\nmine: [%s]\n", strncat(str1, str0, 4), mystrncat(mystr1, mystr0, 4));
 }

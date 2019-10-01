@@ -31,6 +31,21 @@ char * mystrcpy( char *dest, char *source ){
 }
 
 char * mystrncat( char *dest, char *source, int n){
+	int i = 0;
+	int j = 0;
+	while (1) {
+		if (dest[j] == NULL) {
+			break;
+		}else {
+			j++;
+		}
+	}
+	while (i < n) {
+		dest[j + i] = source[i];
+		i++;
+	}
+	dest[j + i] = NULL;
+	return dest;
 }
 
 int mystrcmp( char *s1, char *s2 ){
