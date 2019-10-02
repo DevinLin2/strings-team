@@ -21,7 +21,7 @@ char * mystrcpy( char *dest, char *source ){
 	char item;
 	while (1) {
 		item = source[i];
-		dest[i] = item; 
+		dest[i] = item;
 		if (item == NULL) {
 			break;
 		}
@@ -49,7 +49,39 @@ char * mystrncat( char *dest, char *source, int n){
 }
 
 int mystrcmp( char *s1, char *s2 ){
+	int i,count = 0;
+	while (1) {
+		if (s1[i] == NULL || s2[i] == NULL) {
+			if(s1[i] == s2[i]){
+				return 0;
+			} else if(s1[i] == NULL){
+				return -1;
+			} else{
+				return 1;
+			}
+		}else {
+			if(s1[i] > s2[i]){
+				return 1;
+			} else if(s1[i] > s2[i]){
+				return -1;
+			}
+			i++;
+		}
+	}
 }
 
 char * mystrchr( char *s, char c ){
+	int i = 0;
+	while (1) {
+		if (s[i] == NULL) {
+			break;
+		}else {
+			if(s[i] == c){
+				char *p = &s[i];
+				return p;
+			}
+			i++;
+		}
+	}
+
 }
