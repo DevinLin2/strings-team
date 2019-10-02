@@ -49,7 +49,7 @@ char * mystrncat( char *dest, char *source, int n){
 }
 
 int mystrcmp( char *s1, char *s2 ){
-	int i,count = 0;
+	int i = 0;
 	while (1) {
 		if (s1[i] == NULL || s2[i] == NULL) {
 			if(s1[i] == s2[i]){
@@ -62,7 +62,7 @@ int mystrcmp( char *s1, char *s2 ){
 		}else {
 			if(s1[i] > s2[i]){
 				return 1;
-			} else if(s1[i] > s2[i]){
+			} else if(s1[i] < s2[i]){
 				return -1;
 			}
 			i++;
