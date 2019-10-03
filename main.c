@@ -39,8 +39,8 @@ int main() {
 
 	//test strcmp
 	printf("\nTesting strcmp(comp_str0,comp_str1): \nstandard: %d\nmine: %d\n", strcmp(comp_str0,comp_str1), mystrcmp(comp_str0,comp_str1));
-	printf("\n Testing strcmp(comp_str2,comp_str3): \nstandard: %d\nmine: %d\n", strcmp(comp_str2,comp_str3), mystrcmp(comp_str2,comp_str3));
-	printf("\n Testing strcmp(comp_str4,comp_str5): \nstandard: %d\nmine: %d\n", strcmp(comp_str4,comp_str5), mystrcmp(comp_str4,comp_str5));
+	printf("\nTesting strcmp(comp_str2,comp_str3): \nstandard: %d\nmine: %d\n", strcmp(comp_str2,comp_str3), mystrcmp(comp_str2,comp_str3));
+	printf("\nTesting strcmp(comp_str4,comp_str5): \nstandard: %d\nmine: %d\n", strcmp(comp_str4,comp_str5), mystrcmp(comp_str4,comp_str5));
 
 	//test strch
 	printf("\nTesting strchr(ch_str0,ch):\nstandard: %d\nmine: %d\n", strchr(ch_str0,ch), mystrchr(ch_str0,ch));
